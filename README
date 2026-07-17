@@ -1,22 +1,25 @@
-
 # ReconK12
 
 A React-based school fee reconciliation dashboard that simulates fee collection, reconciliation, penalty calculation, and administrative workflows.
 
-
-## live demo
+## Live Demo
 
 https://reconk12.onrender.com/
+
 ## Problem
+
 Educational institutions often process fee payments through multiple payment channels, making reconciliation time-consuming and prone to manual errors.
- 
-Administrators must identify mismatched transactions, calculate penalties, and monitor payment status across large datasets. 
 
-ReconK12 demonstrates a centralized workflow for visualizing and reconciling fee records in a single interface.
+Administrators must identify mismatched transactions, calculate penalties, and monitor payment status across large datasets.
+
+ReconK12 demonstrates a centralized workflow for managing, visualizing, and reconciling fee records through a single interface.
+
 ## Solution
-ReconK12 is a client-side React application that models a school fee reconciliation workflow. The application combines administrative dashboards, fee records, reconciliation utilities, penalty calculation, and risk analysis into a unified interface.
 
- Business logic is implemented using reusable utility modules, while application state and simulated persistence are managed within the browser using localStorage.
+ReconK12 is a client-side React application that models a school fee reconciliation workflow. The application combines administrative dashboards, fee management, reconciliation utilities, penalty calculation, and risk analysis into a unified interface.
+
+Business logic is implemented using reusable utility modules, while application state and simulated persistence are managed entirely within the browser using `localStorage`.
+
 ## Tech Stack
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
@@ -24,7 +27,6 @@ ReconK12 is a client-side React application that models a school fee reconciliat
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3)
 ![Render](https://img.shields.io/badge/Deployment-Render-46E3B7)
-
 
 ## Architecture
 
@@ -53,6 +55,9 @@ flowchart TD
 
     State --> LocalStorage[(localStorage)]
 ```
+
+## Features
+
 ### Dashboard
 
 - Administrative overview dashboard
@@ -64,7 +69,7 @@ flowchart TD
 
 - Student fee records
 - Payment status tracking
-- Penalty calculation
+- Automatic penalty calculation
 - Fee summaries
 
 ### Reconciliation
@@ -84,4 +89,4 @@ flowchart TD
 
 - Autopilot simulation
 - Offline queue simulation
-- Local persistence using localStorage
+- Browser-based persistence using `localStorage`
